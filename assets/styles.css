@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600&display=swap&subset=latin-ext');
+
+body {
+    font: 16px/1.5 "Source Sans Pro", Helvetica, Sans-Serif;
+    margin: 0 1.5rem;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+    a:hover {
+        border-bottom: solid 1px;
+    }
+
+.breadcrumb {
+    line-height: 40px;
+}
+    .breadcrumb.root {
+        background: left center / 54px 40px no-repeat url('/assets/breadcrumb-logo.png');
+        display: inline-block;
+        padding-left: 60px;
+    }
+        .breadcrumb.root.link {
+            text-indent: -9999px;
+            transition: transform 0.25s;
+        }
+            .breadcrumb.root.link:hover {
+                border-bottom: none;
+                transform: scale(1.1);
+            }
