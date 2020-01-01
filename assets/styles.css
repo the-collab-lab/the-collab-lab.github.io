@@ -24,6 +24,7 @@ a {
         .breadcrumb.root.link {
             text-indent: -9999px;
             transition: transform 0.25s;
+            width: 0; /* safari wasn’t responding to the text being offscreen */
         }
             .breadcrumb.root.link:hover {
                 border-bottom: none;
